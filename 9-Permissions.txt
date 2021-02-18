@@ -1,1 +1,74 @@
+# Concepts addressed:prompt, shell, directory, file permission
 
+~/command-line-9-12-tliapis$ file /etc/shadow
+/etc/shadow: regular file, no read permission
+~/command-line-9-12-tliapis$ less /etc/shadow
+bash: less: command not found
+~/command-line-9-12-tliapis$ id
+uid=1000(runner) gid=1000(runner) groups=1000(runner)
+~/command-line-9-12-tliapis$ > foo.txt
+~/command-line-9-12-tliapis$ ls -l foo.txt
+-rw-r--r-- 1 runner runner 0 Feb 18 20:23 foo.txt
+~/command-line-9-12-tliapis$ chmod 600 foo.txt
+~/command-line-9-12-tliapis$ ls -l foo.txt
+-rw------- 1 runner runner 0 Feb 18 20:23 foo.txt
+~/command-line-9-12-tliapis$ rm -f foo.txt
+~/command-line-9-12-tliapis$ umask
+0022
+~/command-line-9-12-tliapis$ > foo.txt
+~/command-line-9-12-tliapis$ ls -l foo.txt
+-rw-r--r-- 1 runner runner 0 Feb 18 20:26 foo.txt
+~/command-line-9-12-tliapis$ rm foo.txt
+~/command-line-9-12-tliapis$ umask 0000
+~/command-line-9-12-tliapis$ > foo.txt
+~/command-line-9-12-tliapis$ ls -l foo.txt
+-rw-rw-rw- 1 runner runner 0 Feb 18 20:27 foo.txt
+~/command-line-9-12-tliapis$ rm foo.txt; umask 0002
+~/command-line-9-12-tliapis$ su -
+Password: 
+su: Authentication failure
+~/command-line-9-12-tliapis$ exit
+exit
+~/command-line-9-12-tliapis$  su -c 'ls -l /root/*'
+Password: 
+su: Authentication failure
+~/command-line-9-12-tliapis$ sudo backup_script
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ sudo -l
+bash: sudo: command not found
+~/command-line-9-12-tliapis$  sudo cp myfile.txt ~tony
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ sudo ls -l ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ sudo chown tony: ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ sudo ls -l ~tony/myfile.txt
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ sudo mkdir /usr/local/share/Music
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ ls -ld /usr/local/share/Music
+ls: cannot access '/usr/local/share/Music': No such file or directory
+~/command-line-9-12-tliapis$ > /usr/local/share/Music/test_file
+bash: /usr/local/share/Music/test_file: No such file or directory
+~/command-line-9-12-tliapis$ ls -l /usr/local/share/Music
+ls: cannot access '/usr/local/share/Music': No such file or directory
+~/command-line-9-12-tliapis$ sudo chmod g+s /usr/local/share/Music
+bash: sudo: command not found
+~/command-line-9-12-tliapis$ ls -ld /usr/local/share/Music
+ls: cannot access '/usr/local/share/Music': No such file or directory
+~/command-line-9-12-tliapis$  umask 0002
+~/command-line-9-12-tliapis$ rm /usr/local/share/Music/test_file
+rm: cannot remove '/usr/local/share/Music/test_file': No such file or directory
+~/command-line-9-12-tliapis$ > /usr/local/share/Music/test_file
+bash: /usr/local/share/Music/test_file: No such file or directory
+~/command-line-9-12-tliapis$ mkdir /usr/local/share/Music/test_dir
+mkdir: cannot create directory ‘/usr/local/share/Music/test_dir’: No such file or directory
+~/command-line-9-12-tliapis$ ls -l /usr/local/share/Music
+ls: cannot access '/usr/local/share/Music': No such file or directory
+~/command-line-9-12-tliapis$ passwd
+Changing password for runner.
+(current) UNIX password: 
+passwd: Authentication token manipulation error
+passwd: password unchanged
+~/command-line-9-12-tliapis$ exit
+exit
