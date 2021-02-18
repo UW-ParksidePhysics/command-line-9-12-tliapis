@@ -1,1 +1,85 @@
+# Concepts addressed:prompt, shell, metacharacter
 
+top - 20:42:31 up  7:52,  0 users,  load average: 11.90, 16.41, 15
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zomb
+%Cpu(s): 26.1 us, 12.5 sy,  0.0 ni, 60.3 id,  0.1 wa,  0.0 hi,  1.
+KiB Mem : 26694668 total,  1348056 free, 13115196 used, 12231416 b
+KiB Swap:        0 total,        0 free,        0 used. 15209556 a
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM 
+      1 runner    20   0 1535028  20864  12472 S   0.7  0.1 
+     14 runner    20   0   20184   1424   1196 S   0.0  0.0 
+     70 runner    20   0   20184   3344   2900 S   0.0  0.0 
+    169 runner    20   0   40372   3512   3052 R   0.0  0.0 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~/command-line-9-12-tliapis$ xlogo
+~/command-line-9-12-tliapis$ xlogo
+Warning: Cannot convert string "xlogo32" to type Pixmap
+^C
+~/command-line-9-12-tliapis$ xlogo &
+[1] 269
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+ps
+    PID TTY          TIME CMD
+    221 pts/3    00:00:00 bash
+    269 pts/3    00:00:00 xlogo
+    270 pts/3    00:00:00 ps
+~/command-line-9-12-tliapis$ jobs
+[1]+  Running                 xlogo &
+~/command-line-9-12-tliapis$ fg %1
+xlogo
+^C
+~/command-line-9-12-tliapis$ xlogo
+Warning: Cannot convert string "xlogo32" to type Pixmap
+^Z
+[1]+  Stopped                 xlogo
+~/command-line-9-12-tliapis$ bg %1
+[1]+ xlogo &
+~/command-line-9-12-tliapis$ xlogo &
+[2] 272
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+kill -1 13546
+bash: kill: (13546) - No such process
+~/command-line-9-12-tliapis$ xlogo &
+[3] 273
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+kill -INT 13601
+bash: kill: (13601) - No such process
+~/command-line-9-12-tliapis$ xlogo &
+[4] 274
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+~/command-line-9-12-tliapis$ kill -SIGINT 13608
+bash: kill: (13608) - No such process
+~/command-line-9-12-tliapis$ xlogo &
+[5] 284
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+xlogo &
+[6] 285
+~/command-line-9-12-tliapis$ Warning: Cannot convert string "xlogo32" to type Pixmap
+killall xlogo
+[1]   Terminated              xlogo
+[2]   Terminated              xlogo
+[3]   Terminated              xlogo
+[4]   Terminated              xlogo
+[5]-  Terminated              xlogo
