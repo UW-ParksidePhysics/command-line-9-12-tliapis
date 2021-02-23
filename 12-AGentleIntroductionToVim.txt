@@ -1,1 +1,13 @@
+#concepts addressed(prompt, shell, file permission, redirection, text editor)
 
+~/command-line-9-12-WyattGracz$ vi
+~/command-line-9-12-WyattGracz$ rm -f foo.txt
+~/command-line-9-12-WyattGracz$ vi foo.txt
+~/command-line-9-12-WyattGracz$ ls -l /usr/bin > ls-output.txt
+~/command-line-9-12-WyattGracz$ vi foo.txt ls-output.txt
+2 files to edit
+~/command-line-9-12-WyattGracz$ vi foo.txt
+~/command-line-9-12-WyattGracz$ vi ls-output.txt
+~/command-line-9-12-WyattGracz$ :w foo1.txt
+bash: :w: command not found
+~/command-line-9-12-WyattGracz$ vi foo.txt
