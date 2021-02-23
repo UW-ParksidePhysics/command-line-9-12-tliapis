@@ -1,1 +1,130 @@
+concpets addressed(directory, shell , prompt, variables, comments, text editor)
 
+~/command-line-9-12-WyattGracz$ printenv | more
+LC_ALL=en_US.UTF-8
+LD_LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner
+/.apt/usr/lib
+XDG_CONFIG_HOME=/config
+LANG=en_US.UTF-8
+DISPLAY=:0
+REPL_SLUG=command-line-9-12-WyattGracz
+REPL_IMAGE=gcr.io/marine-cycle-160323/polygott:1613423236
+HOSTNAME=6433f5b4ccf7
+REPL_ID=06976aa1-e8bd-45ce-adc4-4759948e7178
+VIRTUAL_ENV=/opt/virtualenvs/python3
+USER=runner
+REPL_OWNER=WyattGracz
+PROMPT_DIRTRIM=2
+PWD=/home/runner/command-line-9-12-WyattGracz
+HOME=/home/runner
+CPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+REPLIT_DB_URL=https://kv.repl.it/v0/eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTQyMjM5MDcsImlhdCI6MTYxNDExMjMwNywiaXNzIj
+oiY29ubWFuIiwiZGF0YWJhc2VfaWQiOiIwNjk3NmFhMS1lOGJkLTQ1Y2UtYWRjNC00NzU5OTQ4ZTcxNzgifQ.g32HUATKBgaKmU1fxiqfhS1JeIL0aP_XroreVD4eLk
+xmvsU3Wxm76HXGOg0jZG75UwYqHF2raFwWVeoh5M5A1Q
+LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner/.a
+pt/usr/lib
+APT_OPTIONS=-o debug::nolocking=true -o dir::cache=/tmp/apt/cache -o dir::state=/tmp/apt/state -o dir::etc::sourcelist=/tmp/apt
+/sources/sources.list
+TERM=xterm-256color
+REPL_LANGUAGE=python3
+SHLVL=1
+PYTHONPATH=/opt/virtualenvs/python3/lib/python3.8/site-packages
+CPPPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+PATH=/usr/local/go/bin:/opt/virtualenvs/python3/bin:/usr/GNUstep/System/Tools:/usr/GNUstep/Local/Tools:/home/runner/.apt/usr/bi
+n:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PS1=\[\033[01;34m\]\w\[\033[00m\]\$ 
+PKG_CONFIG_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:/home/runner/.apt/usr/lib/i386-linux-gnu/pkgconfig:/home/r
+unner/.apt/usr/lib/pkgconfig
+INCLUDE_PATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+_=/usr/bin/printenv
+~/command-line-9-12-WyattGracz$ printenv USER
+runner
+~/command-line-9-12-WyattGracz$ set | more
+APT_OPTIONS='-o debug::nolocking=true -o dir::cache=/tmp/apt/cache -o dir::state=/tmp/apt/state -o dir::etc::sourcelist=/tmp/ap
+t/sources/sources.list'
+BASH=/bin/bash
+BASHOPTS=cmdhist:complete_fullquote:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars
+:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="4" [2]="20" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.4.20(1)-release'
+COLUMNS=127
+CPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+CPPPATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+DIRSTACK=()
+DISPLAY=:0
+EUID=1000
+GROUPS=()
+HISTFILE=/home/runner/.bash_history
+HISTFILESIZE=500
+HISTSIZE=500
+HOME=/home/runner
+HOSTNAME=6433f5b4ccf7
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+INCLUDE_PATH=/home/runner/.apt/usr/include:/home/runner/.apt/usr/include/x86_64-linux-gnu
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LD_LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner
+/.apt/usr/lib
+LIBRARY_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu:/home/runner/.apt/usr/lib/i386-linux-gnu:/usr/local/lib:/home/runner/.a
+pt/usr/lib
+LINES=75
+MACHTYPE=x86_64-pc-linux-gnu
+MAILCHECK=60
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/go/bin:/opt/virtualenvs/python3/bin:/usr/GNUstep/System/Tools:/usr/GNUstep/Local/Tools:/home/runner/.apt/usr/bi
+n:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PIPESTATUS=([0]="0")
+PKG_CONFIG_PATH=/home/runner/.apt/usr/lib/x86_64-linux-gnu/pkgconfig:/home/runner/.apt/usr/lib/i386-linux-gnu/pkgconfig:/home/r
+unner/.apt/usr/lib/pkgconfig
+PPID=1
+PROMPT_DIRTRIM=2
+PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS2='> '
+PS4='+ '
+PWD=/home/runner/command-line-9-12-WyattGracz
+PYTHONPATH=/opt/virtualenvs/python3/lib/python3.8/site-packages
+REPLIT_DB_URL=https://kv.repl.it/v0/eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTQyMjM5MDcsImlhdCI6MTYxNDExMjMwNywiaXNzIj
+oiY29ubWFuIiwiZGF0YWJhc2VfaWQiOiIwNjk3NmFhMS1lOGJkLTQ1Y2UtYWRjNC00NzU5OTQ4ZTcxNzgifQ.g32HUATKBgaKmU1fxiqfhS1JeIL0aP_XroreVD4eLk
+xmvsU3Wxm76HXGOg0jZG75UwYqHF2raFwWVeoh5M5A1Q
+REPL_ID=06976aa1-e8bd-45ce-adc4-4759948e7178
+REPL_IMAGE=gcr.io/marine-cycle-160323/polygott:1613423236
+REPL_LANGUAGE=python3
+REPL_OWNER=WyattGracz
+REPL_SLUG=command-line-9-12-WyattGracz
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=1
+TERM=xterm-256color
+UID=1000
+USER=runner
+VIRTUAL_ENV=/opt/virtualenvs/python3
+XDG_CONFIG_HOME=/config
+_=USER
+~/command-line-9-12-WyattGracz$ echo $HOME
+/home/runner
+~/command-line-9-12-WyattGracz$ alias
+~/command-line-9-12-WyattGracz$ foo="This is some "
+~/command-line-9-12-WyattGracz$ echo $foo
+This is some
+~/command-line-9-12-WyattGracz$ foo=$foo"text."
+~/command-line-9-12-WyattGracz$ echo $foo
+This is some text.
+~/command-line-9-12-WyattGracz$ gedit some_file
+bash: gedit: command not found
+~/command-line-9-12-WyattGracz$ nano .bashrc
+bash: nano: command not found
+~/command-line-9-12-WyattGracz$ source .bashrc
+bash: .bashrc: No such file or directory
+~/command-line-9-12-WyattGracz$ ll
+bash: ll: command not found
+~/command-line-9-12-WyattGracz$ exit
+exit
